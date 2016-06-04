@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="c9625be0-a262-4103-b9b5-06e09a3b9123" name="ModelDDD" linkedPackageId="a7f75216-d4ff-4159-982a-dc675b49999a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="fb7f937f-0990-4a2f-8ecb-c6ead7b3d3b1">
+      <elementDefinition Id="2bfa09f9-84eb-49f4-beb0-f5134c0ee6bb" />
+      <body>As operações são realizadas na conta com referência a cobrança de pacotes ou incidência de jurou ou outras cobranças agendadas</body>
+      <annotatedElements>
+        <interfaceMoniker Id="bdb062a3-66fb-4153-9375-57b24214e9ca" LastKnownName="Operacao" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="7eda481d-212a-48e8-8ddb-d3837d336253">
+      <profileInstance Id="70e688e2-1fd8-477f-8a38-d5808152d76f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b2c8fe9d-0d8f-4805-aafc-3649670b6f66">
+      <profileInstance Id="b58ced21-98f1-4f26-924a-62b6c0684871" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cd7da97e-59f1-42d8-97c5-4c8b8adb35b1" name="Correntista" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="406f7771-43f5-4bae-becd-8235e8487c8e" />
+        <generalsInternal>
+          <generalization Id="bb85aa6f-1910-40b4-aa38-d90b51649558" isSubstitutable="false">
+            <classMoniker Id="6efb1e5c-268d-4f01-9406-0d2eaac72aa1" LastKnownName="Pessoa" />
+            <elementDefinition Id="0f6d255d-3ee0-49ab-b12b-3eaa89dd6f1c" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6efb1e5c-268d-4f01-9406-0d2eaac72aa1" name="Pessoa" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1ffb7b4d-bfb7-41ba-b0e5-dd0a16ce0cd3" />
+        <ownedAttributesInternal>
+          <property Id="a69b938d-fbc0-4f75-a675-f91184b1497f" name="Nome" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="493aa603-5b95-4a5f-bac7-360c32267d24" />
+          </property>
+          <property Id="e3f31f5a-dd50-4d7d-989a-e737da35d40d" name="Email" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="af86f7fe-ffe1-4635-b944-1dc88b1bf7be" />
+          </property>
+          <property Id="2f294fde-693c-48f4-aa73-c356a5ee92a5" name="CPF" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7cb2fd07-fcba-4931-a669-2d6ab60f233f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e24f255f-d990-4925-8482-c52a661989f6" name="Funcionario" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="28f7fa31-284a-4d85-805c-1009bb9fd9c1" />
+        <generalsInternal>
+          <generalization Id="7bc7b706-7486-4ed6-a2a1-961cac96695a" isSubstitutable="false">
+            <classMoniker Id="6efb1e5c-268d-4f01-9406-0d2eaac72aa1" LastKnownName="Pessoa" />
+            <elementDefinition Id="824697bb-7829-4e11-a2f7-2e2d9bad49dc" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="880e630f-196c-479f-bc88-0fef75f461e0" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e14db743-6af9-43d9-be11-1b84f1d0aba7" />
+          </property>
+          <property Id="4dc5b3ab-c802-464c-aeca-1df1488d68ac" name="Senha" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1945d03b-e1a0-454f-8b3f-71661c74ee43" />
+          </property>
+          <property Id="29f7a474-2ac7-4c6a-90b0-41f078ae7222" name="Matricula" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c0868fe-b545-4d6f-bc68-fdb4e5e9b7e2" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="9713c815-3b84-4d44-a808-8476a7e1f241" name="Status" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7f138152-3086-4c0e-a648-9218f7dcca44" />
+        <ownedLiterals>
+          <enumerationLiteral Id="1fce96bf-479f-4033-8d39-f597e9c6d5d0" name="Bloqueada Crédito">
+            <elementDefinition Id="b177291c-a49f-47d4-8bf4-1ff75268b4a0" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="9a85b6de-30a8-4861-94c5-648f1f2c918e" name="Ativa">
+            <elementDefinition Id="79da6734-aeae-45f4-a3fc-091cf7e16fdb" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="761ae2e1-7b39-42db-a06c-72ad4680ce5a" name="Bloqueada Débito">
+            <elementDefinition Id="ba26dfcd-0f3b-4994-a019-f7c10ec1116f" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="264cacfd-f070-44b0-813a-d342710d1f0c" name="Inativa">
+            <elementDefinition Id="8e892da2-f72b-47ae-9d17-d10dd3456fd1" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1a908605-cc18-4c1b-b7e7-1fed61537094" name="ContaCorrente" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2cf1b23c-bf96-481f-8add-3fee70856f0a" />
+        <suppliersInternal>
+          <interfaceRealization Id="03470b0c-7f02-4d1f-83a2-ac1ddc6351e4">
+            <interfaceMoniker Id="b1da09a2-c849-4809-9965-eb59086c310c" LastKnownName="StrategyConta" />
+            <elementDefinition Id="1573a3aa-9584-4520-8e2b-7db8fb05b25e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="085bf42a-546a-4c87-b944-3564aa92a8e8" name="fazDeposito" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ea34b0dc-e5d5-4372-83f7-b6b25e6eecd6" />
+          </operation>
+          <operation Id="81229a4b-b898-4d8a-b354-d0b307e446d9" name="fazSaque" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9ffcb8de-772e-40eb-86c7-f73288562806" />
+          </operation>
+          <operation Id="9f4d31ce-924e-431a-b32c-db93a0dc53df" name="listaExtrato" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d38a36c1-8c1c-4e03-bbeb-e74fc8a079a8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="10586c61-2061-493d-83da-ded1db66688a" name="ContaPoupanca" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5ec3690e-578a-44c6-9a02-4aa10e46aa0e" />
+        <suppliersInternal>
+          <interfaceRealization Id="6704c6ef-ae24-4509-b4f6-4e69a1589e9c">
+            <interfaceMoniker Id="b1da09a2-c849-4809-9965-eb59086c310c" LastKnownName="StrategyConta" />
+            <elementDefinition Id="f8f0bae1-2053-4bc5-b6f3-c7711ade5783" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="4262c6de-f77b-4dcc-bd5e-db1e590728af" name="fazDeposito" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f9528205-1a5c-40f8-bebf-ae5b4cd4f5dd" />
+          </operation>
+          <operation Id="84f6f222-9520-4487-a909-589e3dea4a2d" name="fazSaque" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a2e302e4-bb79-4bf0-9787-956dc4005c24" />
+          </operation>
+          <operation Id="3b62a7c4-f432-4f12-8089-f5c789c33eaf" name="listaExtrato" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2edf5216-d56d-4d03-872a-48ec4f982751" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="b1da09a2-c849-4809-9965-eb59086c310c" name="StrategyConta" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6947a5ee-1ff7-4fa8-b2ab-bc26ee062998" />
+        <targetEnds>
+          <association Id="1775df63-a350-48fb-aa0d-4232ff8e8bd7" isDerived="false" sourceEndRoleName="Conta" targetEndRoleName="Correntista" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cd7da97e-59f1-42d8-97c5-4c8b8adb35b1" LastKnownName="Correntista" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66987393-e050-44b3-a6ef-5e8d0c1cb9b0" name="Conta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="ecdf865f-6597-4b3e-8d78-3e3f998e11de" name="Lower" value="*">
+                      <elementDefinition Id="b23dee15-acf3-49f2-b454-a2ad51663463" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="eba5ba42-b061-408f-ae72-25be3263873b" name="Upper" value="*">
+                      <elementDefinition Id="3264c59e-6dce-474d-9b7b-a8705173e3af" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="101d62f6-cade-41e2-ab18-7707480639a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7f11fe90-6e93-4094-9903-46744318e29c" name="Correntista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b1221016-da40-4e41-a7bd-78b0e725eb9a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="60a75baf-9f11-4e44-9dfd-80fd4375f61c" />
+          </association>
+          <association Id="923f4750-2ff3-4286-b884-5f8ea6ab0974" isDerived="false" sourceEndRoleName="Conta" targetEndRoleName="Status" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="9713c815-3b84-4d44-a808-8476a7e1f241" LastKnownName="Status" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d25f6b30-9db8-454c-a8ad-075b3d567ad6" name="Conta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cd8c3590-0d78-4fe4-99e1-2967035251ec" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7929e49a-a5b6-4aae-b9f8-e2f21de45b42" name="Status" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6ead5c01-73ae-43f1-a6d0-6fd41911d22a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="301b9a96-6fe8-428c-b066-f04dca2276b9" />
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation Id="682c6e8c-8769-4153-a734-f37b1bd8f97b" name="fazDeposito" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6d65b29b-64b8-4bd3-bd86-4fee7020ce6c" />
+          </operation>
+          <operation Id="c8b095f5-768c-43b2-acd3-5ae573587fd7" name="fazSaque" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3845da55-7bd6-44ae-879f-dfa1cf61a373" />
+          </operation>
+          <operation Id="e82a1bad-57d9-455c-a934-10c6f297a5f6" name="listaExtrato" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1d22fd78-e5cb-4ecc-8bb1-3b1f56af9e7b" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6064a96f-955d-4c6f-94e8-b251b1898140" name="Lancamento" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1e4ef54-242f-4932-bc1a-6064d5cbc8ae" />
+        <targetEnds>
+          <association Id="da1984da-52c1-4b8d-aca7-78322c3a034a" isDerived="false" sourceEndRoleName="Lancamento" targetEndRoleName="Conta" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="b1da09a2-c849-4809-9965-eb59086c310c" LastKnownName="StrategyConta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c330034d-499c-42e4-aba6-c7689da95683" name="Lancamento" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="2a52ec92-9073-4705-98e0-ff8ef8cccba5" name="Lower" value="*">
+                      <elementDefinition Id="5075b7d1-cf55-4676-b7f1-6d8b7ad0593c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="b257f878-24b2-4dee-9eda-abebd347801c" name="Upper" value="*">
+                      <elementDefinition Id="090561a7-3cd6-4d2a-9710-6d0f9a082bc8" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3045d643-7576-4b03-b922-2ca68901613e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f672d86-887f-4c04-9252-436be9899b68" name="Conta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dcd9717a-75d0-4eba-a4f7-8f01276febc0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="98646f07-7bbc-40f0-873d-fe6ca55c5176" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="bdb062a3-66fb-4153-9375-57b24214e9ca" name="Operacao" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e4d26695-a928-4f2b-b3d9-6c81e0634d55" />
+        <targetEnds>
+          <association Id="7959fee5-8005-468d-9b78-ffef85c42028" isDerived="false" sourceEndRoleName="Operacao" targetEndRoleName="Conta" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="b1da09a2-c849-4809-9965-eb59086c310c" LastKnownName="StrategyConta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e08bada1-d28a-44b0-8392-6a5ad3550e6c" name="Operacao" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a3dcc2f0-6720-4999-ab9e-284c0b41b4d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2a8979a-db6e-42a7-9fa8-ce62ed98f831" name="Conta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="02644141-9a3d-49fa-87b0-4c7881c599d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="482261ef-6716-4dd9-b2cd-b0e9c730a091" />
+          </association>
+        </targetEnds>
+        <ownedOperations>
+          <operation Id="eda66dd5-ec9c-4e71-9f2b-ec1940acb193" name="caluclaLancamento" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1e8c6dfc-3b0e-40f9-b60d-f5fcf4042af1" />
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bdba25ec-1190-473e-90fd-70124303a743" name="DecoratorOperacaoPacote" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5f732959-3c7c-49ef-9744-a7af53fe834c" />
+        <suppliersInternal>
+          <interfaceRealization Id="5922bf03-24d6-41f3-b37a-239612b23438">
+            <interfaceMoniker Id="bdb062a3-66fb-4153-9375-57b24214e9ca" LastKnownName="Operacao" />
+            <elementDefinition Id="7fbf9f5f-fef0-45e2-b5f6-732aa4bd45ba" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="5b6afdd6-26f1-47ec-94b4-585a1bbe9d2c" isDerived="false" sourceEndRoleName="DecoratorOperacaoPacote" targetEndRoleName="DecoratorOperacaoPacote" isLeaf="false" isAbstract="false">
+            <classMoniker Id="bdba25ec-1190-473e-90fd-70124303a743" LastKnownName="DecoratorOperacaoPacote" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd900aed-2985-45ca-86da-79ad029ad73b" name="DecoratorOperacaoPacote" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="08aef32c-71ef-4ac1-afa4-52071c83f8c8" name="Lower" value="1">
+                      <elementDefinition Id="6bbd090e-39b1-465e-ab6d-f0768b81e854" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="0c02e825-befb-48b6-9047-e9d221567cd7" name="Upper" value="1">
+                      <elementDefinition Id="9dbc258c-4cb2-4f01-81c6-badc8b958d4a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="7bfd42e5-ecc1-4fa9-91a1-a629fc21911a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ecac3c58-90d4-425a-a875-2e3f96ae14b9" name="DecoratorOperacaoPacote" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="86071978-df3d-44dd-93ef-f6c4bbdd84e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="96c6f921-31d8-4454-b997-58037e788afe" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3f82c1a2-d829-414e-973c-1e1689893fe6" name="Operacao" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a25c8667-68a7-4ebc-a1f9-2c618b84663c" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a86a8bac-9595-4beb-ae39-1ec8bccd2e5a" name="caluclaLancamento" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1b9d3d46-13ba-4dc1-93b0-e10ef604494e" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e2c37c16-7c2f-4a98-8fbc-d2902541e940" name="RepoConta" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0a5b1236-89ef-4f6a-a709-6c16b0e46b2a" />
+        <targetEnds>
+          <association Id="ff8905dd-d4ec-456b-89f9-ee2546a209d2" isDerived="false" sourceEndRoleName="RepoConta" targetEndRoleName="StrategyConta" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="b1da09a2-c849-4809-9965-eb59086c310c" LastKnownName="StrategyConta" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d189996c-e50e-4548-99dd-f1c5a2b91493" name="RepoConta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="392c3ac2-c15e-431a-82c0-f51129d8384e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc5e5b62-81c3-459d-bf5c-0964b5f1d586" name="StrategyConta" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="f71cd64e-8289-42a4-95ce-83cf46ba5b20" name="Lower" value="*">
+                      <elementDefinition Id="ca84cdf2-7c77-4609-bf3e-4da28c4ca685" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="a9d9a4ef-1b46-4256-83af-d0f8eda0c1cb" name="Upper" value="*">
+                      <elementDefinition Id="f8e47798-802d-44a5-9346-950ca4925639" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3ee664b4-442a-4e8f-b58b-dfe425586787" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="757a8e90-9304-4825-ac82-1ef146c850ae" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d4f18947-596b-4fb0-8a38-10012f275201" name="RepoCorrentista" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7fcd915d-3648-4001-a159-fcc01d4529e7" />
+        <targetEnds>
+          <association Id="a524771f-325d-4c2a-a620-0c5f53ed5a01" isDerived="false" sourceEndRoleName="RepoCorrentista" targetEndRoleName="Correntista" isLeaf="false" isAbstract="false">
+            <classMoniker Id="cd7da97e-59f1-42d8-97c5-4c8b8adb35b1" LastKnownName="Correntista" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38a73836-0635-4115-a59f-563b3442083c" name="RepoCorrentista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="363b9936-faa8-43b3-bf74-957b50174490" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dad88edb-7b10-4e3f-8f2f-3830f000c3eb" name="Correntista" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="8c612dcb-f420-40eb-85a8-248e7a63420a" name="Lower" value="*">
+                      <elementDefinition Id="4ab10ef2-38ec-427c-afdd-e208187421cc" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="6a69db63-0f99-4043-b948-f6a41a9dea3d" name="Upper" value="*">
+                      <elementDefinition Id="332aeac2-1d76-48aa-a064-9541b874f47a" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="e5fd1085-fed0-494c-9442-ddd35d2ec75d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="55750a89-fdd0-4d63-9d03-56ab3e28c454" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a7f75216-d4ff-4159-982a-dc675b49999a" name="ModelDDD">
+    <elementDefinition Id="db3be298-eb09-4a6c-96a1-ee201e6bc5e3" />
+  </package>
+</logicalClassDesignerModel>
