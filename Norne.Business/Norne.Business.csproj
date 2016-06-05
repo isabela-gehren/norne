@@ -40,10 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comparable\PapelComparable.cs" />
     <Compile Include="ICorrentistaBusiness.cs" />
     <Compile Include="IFuncionarioBusiness.cs" />
     <Compile Include="Implementacao\CorrentistaBusiness.cs" />
     <Compile Include="Implementacao\FuncionarioBusiness.cs" />
+    <Compile Include="Implementacao\PapelBusiness.cs" />
+    <Compile Include="Implementacao\StatusContaBusiness.cs" />
+    <Compile Include="IPapelBusiness.cs" />
+    <Compile Include="IStatusContaBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

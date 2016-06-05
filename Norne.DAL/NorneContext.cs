@@ -8,7 +8,7 @@ namespace Norne.DAL
     {
         static NorneContext()
         {
-            Database.SetInitializer<NorneContext>(null);
+            Database.SetInitializer<NorneContext>(new CustomDatabaseIniatilizer<NorneContext>());
         }
 
         public NorneContext()
@@ -16,11 +16,8 @@ namespace Norne.DAL
         {
         }
 
-        //public DbSet<Correntista> Correntistas { get; set; }
-        //public DbSet<Funcionario> Funcionarios { get; set; }
-        //public DbSet<Papel> Papeis { get; set; }
-        //public DbSet<PapelFuncionario> PapelFuncionarios { get; set; }
-        //public DbSet<StatusConta> StatusContas { get; set; }
+        public DbSet<Papel> Papeis { get; set; }
+        public DbSet<StatusConta> StatusContas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -36,6 +33,24 @@ namespace Norne.DAL
             this.Configuration.ValidateOnSaveEnabled = true;
             this.Configuration.UseDatabaseNullSemantics = false;
             this.Configuration.EnsureTransactionsForFunctionsAndCommands = false;
+        }
+    }
+
+    internal class CustomDatabaseIniatilizer<T> : CreateDatabaseIfNotExists<NorneContext>
+    {
+        protected override void Seed(NorneContext context)
+        {
+            base.Seed(context);
+
+            context.StatusContas.Add(new StatusConta() { Codigo = 1, Status = "Ativa" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 2, Status = "Inativa" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 3, Status = "Esperando Aprovação" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 4, Status = "Bloqueada Crédito" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 5, Status = "Bloqueada Débito" });
+
+            context.Papeis.Add(new Papel() { Codigo = 1, Nome = "Gerente" });
+
+            context.SaveChanges();
         }
     }
 }
