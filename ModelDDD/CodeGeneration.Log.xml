@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="Diagnostic" Text="ProjectPath = ..\ModelDDDLib\ModelDDDLib.csproj" />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-06-08T12:09:12" Importance="Medium" Text="ModelDDD's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'ModelDDD::Pessoa' -  (Class), 'ModelDDD::DecoratorOperacaoPacote' -  (Class), 'ModelDDD::Funcionario' -  (Class), 'ModelDDD::Correntista' -  (Class), 'ModelDDD::Lancamento' -  (Class), 'ModelDDD::RepoCorrentista' -  (Class), 'ModelDDD::RepoConta' -  (Class), 'ModelDDD::ContaCorrente' -  (Class), 'ModelDDD::ContaPoupanca' -  (Class), 'ModelDDD::AniversarioPoupanca' -  (Class) " />
+  <Message Timestamp="2016-06-08T12:09:23" Importance="Medium" Text="Project Added: C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\ModelDDDLib.csproj" />
+  <Message Timestamp="2016-06-08T12:09:23" Importance="Medium" Text="'ModelDDD::Pessoa' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\Pessoa.cs" />
+  <Message Timestamp="2016-06-08T12:09:25" Importance="Medium" Text="'ModelDDD::DecoratorOperacaoPacote' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\DecoratorOperacaoPacote.cs" />
+  <Message Timestamp="2016-06-08T12:09:26" Importance="Medium" Text="'ModelDDD::Funcionario' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\Funcionario.cs" />
+  <Message Timestamp="2016-06-08T12:09:26" Importance="Medium" Text="'ModelDDD::Correntista' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\Correntista.cs" />
+  <Message Timestamp="2016-06-08T12:09:26" Importance="Medium" Text="'ModelDDD::Lancamento' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\Lancamento.cs" />
+  <Message Timestamp="2016-06-08T12:09:27" Importance="Medium" Text="'ModelDDD::RepoCorrentista' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\RepoCorrentista.cs" />
+  <Message Timestamp="2016-06-08T12:09:27" Importance="Medium" Text="'ModelDDD::RepoConta' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\RepoConta.cs" />
+  <Message Timestamp="2016-06-08T12:09:27" Importance="Medium" Text="'ModelDDD::ContaCorrente' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\ContaCorrente.cs" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Medium" Text="'ModelDDD::ContaPoupanca' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\ContaPoupanca.cs" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Medium" Text="'ModelDDD::AniversarioPoupanca' -  (Class) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\AniversarioPoupanca.cs" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Diagnostic" Text="ProjectPath = ..\ModelDDDLib\ModelDDDLib.csproj" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-06-08T12:09:28" Importance="Medium" Text="ModelDDD's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'ModelDDD::Status' -  (Enumeration) " />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Medium" Text="'ModelDDD::Status' -  (Enumeration) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\Status.cs" />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Diagnostic" Text="Name = InterfaceTemplate" />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Diagnostic" Text="ProjectPath = ..\ModelDDDLib\ModelDDDLib.csproj" />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2016-06-08T12:09:29" Importance="Medium" Text="ModelDDD's Text Template Binding: 'InterfaceTemplate' will apply InterfaceTemplate.t4 to: 'ModelDDD::Operacao' -  (Interface), 'ModelDDD::StrategyConta' -  (Interface) " />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Medium" Text="'ModelDDD::Operacao' -  (Interface) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\Operacao.cs" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Medium" Text="'ModelDDD::StrategyConta' -  (Interface) : success (file created) - C:\Users\Administrator\projeto.NET2016\norne\ModelDDDLib\GeneratedCode\StrategyConta.cs" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Diagnostic" Text="ProjectPath = ..\ModelDDDLib\ModelDDDLib.csproj" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-06-08T12:09:30" Importance="Medium" Text="ModelDDD's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'ModelDDD::Pessoa' -  (Class), 'ModelDDD::DecoratorOperacaoPacote' -  (Class), 'ModelDDD::Funcionario' -  (Class), 'ModelDDD::Correntista' -  (Class), 'ModelDDD::Lancamento' -  (Class), 'ModelDDD::RepoCorrentista' -  (Class), 'ModelDDD::RepoConta' -  (Class), 'ModelDDD::ContaCorrente' -  (Class), 'ModelDDD::ContaPoupanca' -  (Class), 'ModelDDD::AniversarioPoupanca' -  (Class) " />
+  <Message Timestamp="2016-06-08T12:09:31" Importance="Diagnostic" Text="'ModelDDD::Pessoa' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:31" Importance="Diagnostic" Text="'ModelDDD::DecoratorOperacaoPacote' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:31" Importance="Diagnostic" Text="'ModelDDD::Funcionario' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:31" Importance="Diagnostic" Text="'ModelDDD::Correntista' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:31" Importance="Diagnostic" Text="'ModelDDD::Lancamento' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:32" Importance="Diagnostic" Text="'ModelDDD::RepoCorrentista' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:32" Importance="Diagnostic" Text="'ModelDDD::RepoConta' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:32" Importance="Diagnostic" Text="'ModelDDD::ContaCorrente' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:32" Importance="Diagnostic" Text="'ModelDDD::ContaPoupanca' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:32" Importance="Diagnostic" Text="'ModelDDD::AniversarioPoupanca' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="The selection included 16 elements which were not bound to a template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'bb30e176-3a02-47d1-9574-a93b91f98a02' -  (Comment): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'824697bb-7829-4e11-a2f7-2e2d9bad49dc' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'0f6d255d-3ee0-49ab-b12b-3eaa89dd6f1c' -  (Generalization): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'2bfa09f9-84eb-49f4-beb0-f5134c0ee6bb' -  (Comment): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (InterfaceRealization): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="Diagnostic" Text="'ModelDDD::' -  (Association): no bound template." />
+  <Message Timestamp="2016-06-08T12:09:33" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>

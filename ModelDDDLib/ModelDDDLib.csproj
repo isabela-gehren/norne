@@ -1,17 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9BE6C72D-2A79-4CB8-8543-ACD52C93E3C4}</ProjectGuid>
+    <ProjectGuid>{AE2B11DD-5A17-4960-90DA-16A8C78A4958}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Norne.Business</RootNamespace>
-    <AssemblyName>Norne.Business</AssemblyName>
+    <RootNamespace>ModelDDDLib</RootNamespace>
+    <AssemblyName>ModelDDDLib</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,31 +36,23 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comparable\PapelComparable.cs" />
-    <Compile Include="ICorrentistaBusiness.cs" />
-    <Compile Include="IFuncionarioBusiness.cs" />
-    <Compile Include="Implementacao\CorrentistaBusiness.cs" />
-    <Compile Include="Implementacao\FuncionarioBusiness.cs" />
-    <Compile Include="Implementacao\PapelBusiness.cs" />
-    <Compile Include="Implementacao\StatusContaBusiness.cs" />
-    <Compile Include="IPapelBusiness.cs" />
-    <Compile Include="IStatusContaBusiness.cs" />
+    <Compile Include="GeneratedCode\AniversarioPoupanca.cs" />
+    <Compile Include="GeneratedCode\ContaCorrente.cs" />
+    <Compile Include="GeneratedCode\ContaPoupanca.cs" />
+    <Compile Include="GeneratedCode\Correntista.cs" />
+    <Compile Include="GeneratedCode\DecoratorOperacaoPacote.cs" />
+    <Compile Include="GeneratedCode\Funcionario.cs" />
+    <Compile Include="GeneratedCode\Lancamento.cs" />
+    <Compile Include="GeneratedCode\Operacao.cs" />
+    <Compile Include="GeneratedCode\Pessoa.cs" />
+    <Compile Include="GeneratedCode\RepoConta.cs" />
+    <Compile Include="GeneratedCode\RepoCorrentista.cs" />
+    <Compile Include="GeneratedCode\Status.cs" />
+    <Compile Include="GeneratedCode\StrategyConta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\Norne.DAL\Norne.DAL.csproj">
-      <Project>{86311cb0-54c8-4469-8ba6-b08359c58cad}</Project>
-      <Name>Norne.DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Norne.Models\Norne.Models.csproj">
-      <Project>{2d82c245-7672-4f0b-80a8-ed37edbd7368}</Project>
-      <Name>Norne.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
