@@ -11,6 +11,8 @@ using System.Text;
 
 public class AniversarioPoupanca
 {
+    public int Id { get; set; }
+
 	public virtual List<Lancamento> Lancamentos
 	{
 		get;

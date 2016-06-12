@@ -11,6 +11,12 @@ using System.Text;
 
 public class Lancamento
 {
+    public int Id { get; set; }
+
+    public DateTime Momento { get; set; }
+
+    public Decimal Valor { get; set; }
+
 	public virtual StrategyConta Conta
 	{
 		get;

@@ -11,6 +11,8 @@ using System.Text;
 
 public class ContaPoupanca : StrategyConta
 {
+    public int Id { get; set; }
+
 	public virtual List<AniversarioPoupanca> Aniversarios
 	{
 		get;

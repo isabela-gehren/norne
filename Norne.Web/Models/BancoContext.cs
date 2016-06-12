@@ -20,6 +20,12 @@ namespace Norne.Web.Models
         }
 
         public System.Data.Entity.DbSet<Correntista> Correntistas { get; set; }
+
+        public System.Data.Entity.DbSet<ContaCorrente> ContaCorrentes { get; set; }
+
+        public System.Data.Entity.DbSet<Lancamento> Lancamentoes { get; set; }
+
+        public System.Data.Entity.DbSet<ContaPoupanca> ContaPoupancas { get; set; }
     
     }
 }
