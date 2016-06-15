@@ -123,5 +123,10 @@ namespace Norne.Web.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
     }
 }

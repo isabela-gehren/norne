@@ -181,6 +181,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\landing-page.css" />
+    <Content Include="Content\img\bank_card_1440x900.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -238,6 +240,7 @@
     <Content Include="Views\Correntistas\Details.cshtml" />
     <Content Include="Views\Correntistas\Edit.cshtml" />
     <Content Include="Views\Correntistas\Index.cshtml" />
+    <Content Include="Views\Correntistas\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

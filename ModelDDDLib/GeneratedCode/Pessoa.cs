@@ -31,5 +31,11 @@ public abstract class Pessoa
 		set;
 	}
 
+    public virtual long RG { get; set; }
+
+    public virtual string Naturalidade { get; set; }
+
+    public virtual string Nacionalidade { get; set; }
+
 }
 

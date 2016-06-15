@@ -168,3 +168,11 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+.login-form {
+    right: auto;
+    left: 50%;
+    width: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
