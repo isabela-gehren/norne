@@ -8,5 +8,10 @@ namespace Norne.Models
         public int Codigo { get; set; }
         public string Nome { get; set; }
         public string Cpf { get; set; }
+        public string Senha { get; set; }
+        public virtual string Email { get; set; }
+        public virtual string Rg { get; set; }
+        public virtual string Naturalidade { get; set; }
+        public virtual string Nacionalidade { get; set; }
     }
 }

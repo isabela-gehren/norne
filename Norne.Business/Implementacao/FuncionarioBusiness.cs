@@ -10,9 +10,9 @@ namespace Norne.Business
         public IList<Funcionario> Listar()
         {
             IList<Funcionario> lista = new List<Funcionario>();
-            using (IUnitOfWork unit = new UnitOfWork())
+            using (IUnitOfWork uow = new UnitOfWork())
             {
-                var funcionarioDal = new FuncionarioDal(unit);
+                var funcionarioDal = new FuncionarioDal(uow);
 
                 lista = funcionarioDal.GetAll("Papeis");
             }
@@ -22,9 +22,9 @@ namespace Norne.Business
         public IList<Funcionario> ListarPorPapel(Papel p)
         {
             IList<Funcionario> lista = new List<Funcionario>();
-            using (IUnitOfWork unit = new UnitOfWork())
+            using (IUnitOfWork uow = new UnitOfWork())
             {
-                var funcionarioDal = new FuncionarioDal(unit);
+                var funcionarioDal = new FuncionarioDal(uow);
 
                 lista = funcionarioDal.Find(i => i.Papeis.Contains(p, new Comparable.PapelComparable())).ToList();
             }
@@ -34,9 +34,9 @@ namespace Norne.Business
         public Funcionario ValidarFuncionario(string login, string senha)
         {
             Funcionario func;
-            using (IUnitOfWork unit = new UnitOfWork())
+            using (IUnitOfWork uow = new UnitOfWork())
             {
-                var funcionarioDal = new FuncionarioDal(unit);
+                var funcionarioDal = new FuncionarioDal(uow);
                 func = funcionarioDal.Find(i => i.Login.Equals(login) && i.Senha.Equals(senha), "Papeis").FirstOrDefault();
             }
             return func;
@@ -44,19 +44,21 @@ namespace Norne.Business
 
         public void Excluir(Funcionario funcionario)
         {
-            using (IUnitOfWork unit = new UnitOfWork())
+            using (IUnitOfWork uow = new UnitOfWork())
             {
-                var funcionarioDal = new FuncionarioDal(unit);
+                var funcionarioDal = new FuncionarioDal(uow);
                 funcionarioDal.Delete(funcionario);
+                uow.Commit();
             }
         }
 
         public int Incluir(Funcionario funcionario)
         {
-            using (IUnitOfWork unit = new UnitOfWork())
+            using (IUnitOfWork uow = new UnitOfWork())
             {
-                var funcionarioDal = new FuncionarioDal(unit);
+                var funcionarioDal = new FuncionarioDal(uow);
                 funcionario = funcionarioDal.Add(funcionario);
+                uow.Commit();
             }
 
             return funcionario.Codigo;
@@ -64,10 +66,11 @@ namespace Norne.Business
 
         public void Alterar(Funcionario funcionario)
         {
-            using (IUnitOfWork unit = new UnitOfWork())
+            using (IUnitOfWork uow = new UnitOfWork())
             {
-                var funcionarioDal = new FuncionarioDal(unit);
+                var funcionarioDal = new FuncionarioDal(uow);
                 funcionarioDal.Update(funcionario);
+                uow.Commit();
             }
         }
     }

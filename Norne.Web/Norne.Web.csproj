@@ -50,6 +50,18 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SimpleInjector, Version=3.1.5.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.3.1.5\lib\net45\SimpleInjector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web, Version=3.1.5.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.3.1.5\lib\net40\SimpleInjector.Integration.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.Web.Mvc, Version=3.1.5.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.Web.Mvc.3.1.5\lib\net40\SimpleInjector.Integration.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -172,7 +184,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\BancoContext.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -181,6 +192,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\landing-page.css" />
+    <Content Include="Content\img\bank_card_1440x900.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -238,6 +251,7 @@
     <Content Include="Views\Correntistas\Details.cshtml" />
     <Content Include="Views\Correntistas\Edit.cshtml" />
     <Content Include="Views\Correntistas\Index.cshtml" />
+    <Content Include="Views\Correntistas\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -251,9 +265,9 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ModelDDDLib\ModelDDDLib.csproj">
-      <Project>{ae2b11dd-5a17-4960-90da-16a8c78a4958}</Project>
-      <Name>ModelDDDLib</Name>
+    <ProjectReference Include="..\Norne.Business\Norne.Business.csproj">
+      <Project>{9BE6C72D-2A79-4CB8-8543-ACD52C93E3C4}</Project>
+      <Name>Norne.Business</Name>
     </ProjectReference>
     <ProjectReference Include="..\Norne.Models\Norne.Models.csproj">
       <Project>{2D82C245-7672-4F0B-80A8-ED37EDBD7368}</Project>

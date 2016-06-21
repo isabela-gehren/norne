@@ -3,7 +3,7 @@ using Norne.DAL;
 using Norne.Models;
 using System.Collections.Generic;
 
-namespace Norne.Business.Implementacao
+namespace Norne.Business
 {
    public  class StatusContaBusiness: IStatusContaBusiness
     {
