@@ -11,9 +11,6 @@ using System.Text;
 
 public interface StrategyConta 
 {
-    
-    int Id { get; set; }
-
 	Operacao Operacao { get;set; }
 
 	List<Lancamento> Lancamentos { get;set; }

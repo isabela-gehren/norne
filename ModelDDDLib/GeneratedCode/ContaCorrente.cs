@@ -11,8 +11,6 @@ using System.Text;
 
 public class ContaCorrente : StrategyConta
 {
-    public int Id { get; set; }
-
 	public virtual void fazDeposito()
 	{
 		throw new System.NotImplementedException();
