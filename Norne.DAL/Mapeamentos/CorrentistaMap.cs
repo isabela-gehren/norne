@@ -28,7 +28,7 @@ namespace Norne.DAL.Models.Mapping
             this.Property(t => t.Rg).IsRequired().HasMaxLength(14);
 
             this.Property(t => t.Senha).IsRequired().HasMaxLength(10);
-
+            
             this.ToTable("Correntista");
         }
     }

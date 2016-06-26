@@ -16,10 +16,10 @@ namespace Norne.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            InjetaDependecias();
+            InjetaDependencias();
         }
 
-        private void InjetaDependecias()
+        private void InjetaDependencias()
         {
             var container = new Container();
 
@@ -27,6 +27,8 @@ namespace Norne.Web
             container.Register<IFuncionarioBusiness, FuncionarioBusiness>(Lifestyle.Transient);
             container.Register<IPapelBusiness, PapelBusiness>(Lifestyle.Transient);
             container.Register<IStatusContaBusiness, StatusContaBusiness>(Lifestyle.Transient);
+            container.Register<IContaCorrenteBusiness, ContaCorrenteBusiness>(Lifestyle.Transient);
+            container.Register<IContaPoupancaBusiness, ContaPoupancaBusiness>(Lifestyle.Transient);
 
             container.Verify();
 

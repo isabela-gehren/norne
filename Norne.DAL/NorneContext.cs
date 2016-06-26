@@ -25,6 +25,12 @@ namespace Norne.DAL
             modelBuilder.Configurations.Add(new FuncionarioMap());
             modelBuilder.Configurations.Add(new PapelMap());
             modelBuilder.Configurations.Add(new StatusContaMap());
+            modelBuilder.Configurations.Add(new AgenciaMap());
+            modelBuilder.Configurations.Add(new ContaMap());
+            modelBuilder.Configurations.Add(new ContaCorrenteMap());
+            modelBuilder.Configurations.Add(new ContaPoupancaMap());
+            modelBuilder.Configurations.Add(new ContaCorrentistaDependenteMap());
+
 
             this.Configuration.LazyLoadingEnabled = false;
             this.Configuration.ProxyCreationEnabled = false;
@@ -42,11 +48,11 @@ namespace Norne.DAL
         {
             base.Seed(context);
 
-            context.StatusContas.Add(new StatusConta() { Codigo = 1, Status = "Ativa" });
-            context.StatusContas.Add(new StatusConta() { Codigo = 2, Status = "Inativa" });
-            context.StatusContas.Add(new StatusConta() { Codigo = 3, Status = "Esperando Aprovação" });
-            context.StatusContas.Add(new StatusConta() { Codigo = 4, Status = "Bloqueada Crédito" });
-            context.StatusContas.Add(new StatusConta() { Codigo = 5, Status = "Bloqueada Débito" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 1, Descricao = "Ativa" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 2, Descricao = "Inativa" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 3, Descricao = "Pendente Aprovação" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 4, Descricao = "Bloqueada Crédito" });
+            context.StatusContas.Add(new StatusConta() { Codigo = 5, Descricao = "Bloqueada Débito" });
 
             context.Papeis.Add(new Papel() { Codigo = 1, Nome = "Gerente" });
 

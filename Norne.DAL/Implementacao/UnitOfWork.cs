@@ -29,7 +29,16 @@ namespace Norne.DAL
         public int Commit()
         {
             //Save changes with the default options
-            return _dbContext.SaveChanges();
+            try
+            {
+                return _dbContext.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+            
         }
 
         

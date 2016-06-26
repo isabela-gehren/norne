@@ -42,9 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comparable\PapelComparable.cs" />
+    <Compile Include="IAgenciaBusiness.cs" />
+    <Compile Include="IContaPoupancaBusiness.cs" />
+    <Compile Include="IContaCorrenteBusiness.cs" />
     <Compile Include="ICorrentistaBusiness.cs" />
+    <Compile Include="IContaBusiness.cs" />
     <Compile Include="IFuncionarioBusiness.cs" />
+    <Compile Include="Implementacao\ContaPoupancaBusiness.cs" />
+    <Compile Include="Implementacao\AgenciaBusiness.cs" />
     <Compile Include="Implementacao\CorrentistaBusiness.cs" />
+    <Compile Include="Implementacao\ContaCorrenteBusiness.cs" />
     <Compile Include="Implementacao\FuncionarioBusiness.cs" />
     <Compile Include="Implementacao\PapelBusiness.cs" />
     <Compile Include="Implementacao\StatusContaBusiness.cs" />
