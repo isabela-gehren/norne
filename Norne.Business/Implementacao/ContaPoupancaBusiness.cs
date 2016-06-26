@@ -8,6 +8,8 @@ namespace Norne.Business
 {
     public class ContaPoupancaBusiness : IContaPoupancaBusiness
     {
+        string[] paramsListar = new string[] { "Agencia", "StatusConta", "CorrentistaTitular", "ContaCorrentistaDependentes" };
+
         public IList<ContaPoupanca> Listar()
         {
             IList<ContaPoupanca> lista = new List<ContaPoupanca>();
@@ -15,7 +17,7 @@ namespace Norne.Business
             {
                 var dal = new ContaPoupancaDal(uow);
 
-                lista = dal.GetAll();
+                lista = dal.GetAll(paramsListar);
             }
             return lista;
         }

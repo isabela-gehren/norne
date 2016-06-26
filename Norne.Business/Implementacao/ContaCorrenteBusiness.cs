@@ -6,6 +6,7 @@ namespace Norne.Business
 {
     public class ContaCorrenteBusiness : IContaCorrenteBusiness
     {
+        string[] paramsListar = new string[] { "Agencia", "StatusConta", "CorrentistaTitular", "ContaCorrentistaDependentes" };
         public IList<ContaCorrente> Listar()
         {
             IList<ContaCorrente> lista = new List<ContaCorrente>();
@@ -13,11 +14,11 @@ namespace Norne.Business
             {
                 var dal = new ContaCorrenteDal(uow);
 
-                lista = dal.GetAll();
+                lista = dal.GetAll(paramsListar);
             }
             return lista;
         }
-        
+
         public void Excluir(ContaCorrente Conta)
         {
             using (IUnitOfWork uow = new UnitOfWork())

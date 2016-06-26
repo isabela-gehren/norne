@@ -12,7 +12,7 @@ namespace Norne.Web.Controllers
 
         // injeção de dependência por construtor
         public CorrentistasController(ICorrentistaBusiness correntistaBusiness)
-        {   
+        {
             business = correntistaBusiness;
         }
 
@@ -34,6 +34,9 @@ namespace Norne.Web.Controllers
             //conta2.Status = statatusbusiness.Listar().FirstOrDefault();
             //conta2.CorrentistaTitular = business.Listar().FirstOrDefault();
             //cp.Incluir(conta2);
+
+            //ContaCorrenteBusiness cc = new ContaCorrenteBusiness();
+            //var contascorrentes = cc.Listar();
 
             return View(business.Listar());
         }
@@ -128,7 +131,7 @@ namespace Norne.Web.Controllers
             business.Excluir(id);
             return RedirectToAction("Index");
         }
-        
+
         public ActionResult Login()
         {
             return View();
