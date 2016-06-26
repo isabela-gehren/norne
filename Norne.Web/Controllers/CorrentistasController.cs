@@ -99,7 +99,7 @@ namespace Norne.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                business.Update(correntista);
+                business.Alterar(correntista);
                 return RedirectToAction("Index");
             }
             return View(correntista);

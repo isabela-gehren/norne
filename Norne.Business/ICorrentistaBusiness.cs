@@ -10,7 +10,7 @@ namespace Norne.Business
         int Incluir(Correntista correntista);
         void Excluir(int codigo);
         void Excluir(Correntista correntista);
-        void Update(Correntista correntista);
+        void Alterar(Correntista correntista);
         Correntista Obter(int codigo);
         Correntista Obter(string cpf);
     }

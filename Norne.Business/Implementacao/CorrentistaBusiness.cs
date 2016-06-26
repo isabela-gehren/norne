@@ -1,14 +1,21 @@
-﻿using System;
-using Norne.Models;
+﻿using Norne.Models;
 using Norne.DAL;
 using System.Linq;
 using System.Collections.Generic;
+using Norne.Utils;
 
 namespace Norne.Business
 {
     public class CorrentistaBusiness : ICorrentistaBusiness
     {
+        ICriptografia criptografia;
+        public CorrentistaBusiness(ICriptografia cripto)
+        {
+            criptografia = cripto;
+        }
+
         private ICorrentistaDal dal;
+        private Funcionario func;
 
         public IList<Correntista> Listar()
         {
@@ -48,6 +55,7 @@ namespace Norne.Business
             using (IUnitOfWork uow = new UnitOfWork())
             {
                 dal = new CorrentistaDal(uow);
+                correntista.Senha = criptografia.Criptografa(correntista.Senha);
                 correntista = dal.Add(correntista);
 
                 uow.Commit();
@@ -69,11 +77,12 @@ namespace Norne.Business
             }
         }
 
-        public void Update(Correntista correntista)
+        public void Alterar(Correntista correntista)
         {
             using (IUnitOfWork uow = new UnitOfWork())
             {
                 dal = new CorrentistaDal(uow);
+                correntista.Senha = criptografia.Criptografa(correntista.Senha);
                 dal.Update(correntista);
                 uow.Commit();
             }

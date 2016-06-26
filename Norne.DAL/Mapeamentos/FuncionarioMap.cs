@@ -34,7 +34,7 @@ namespace Norne.DAL.Models.Mapping
 
             this.Property(t => t.Senha)
                 .IsRequired()
-                .HasMaxLength(20);
+                .HasMaxLength(100);
 
             this.HasMany(t => t.Papeis)
                 .WithMany(t => t.Funcionarios)

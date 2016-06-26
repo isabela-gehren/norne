@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelDDD", "ModelDDD\ModelDDD.modelproj", "{39FD274C-1D6E-45F1-9DB4-8F37D688FD8C}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norne.Business", "Norne.Business\Norne.Business.csproj", "{9BE6C72D-2A79-4CB8-8543-ACD52C93E3C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelDDDLib", "ModelDDDLib\ModelDDDLib.csproj", "{AE2B11DD-5A17-4960-90DA-16A8C78A4958}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Norne.Utils", "Norne.Utils\Norne.Utils.csproj", "{84553199-F990-4D31-82F5-036CDD968D5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{AE2B11DD-5A17-4960-90DA-16A8C78A4958}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE2B11DD-5A17-4960-90DA-16A8C78A4958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE2B11DD-5A17-4960-90DA-16A8C78A4958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84553199-F990-4D31-82F5-036CDD968D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84553199-F990-4D31-82F5-036CDD968D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84553199-F990-4D31-82F5-036CDD968D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84553199-F990-4D31-82F5-036CDD968D5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

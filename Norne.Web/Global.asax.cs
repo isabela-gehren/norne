@@ -1,4 +1,5 @@
 ﻿using Norne.Business;
+using Norne.Utils;
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;
 using System.Web.Mvc;
@@ -29,6 +30,7 @@ namespace Norne.Web
             container.Register<IStatusContaBusiness, StatusContaBusiness>(Lifestyle.Transient);
             container.Register<IContaCorrenteBusiness, ContaCorrenteBusiness>(Lifestyle.Transient);
             container.Register<IContaPoupancaBusiness, ContaPoupancaBusiness>(Lifestyle.Transient);
+            container.Register<ICriptografia, CriptografiaHash>(Lifestyle.Transient);
 
             container.Verify();
 

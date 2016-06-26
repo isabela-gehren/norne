@@ -273,6 +273,10 @@
       <Project>{2D82C245-7672-4F0B-80A8-ED37EDBD7368}</Project>
       <Name>Norne.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Norne.Utils\Norne.Utils.csproj">
+      <Project>{84553199-f990-4d31-82f5-036cdd968d5f}</Project>
+      <Name>Norne.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
