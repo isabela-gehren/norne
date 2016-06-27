@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9BE6C72D-2A79-4CB8-8543-ACD52C93E3C4}</ProjectGuid>
+    <ProjectGuid>{84553199-F990-4D31-82F5-036CDD968D5F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Norne.Business</RootNamespace>
-    <AssemblyName>Norne.Business</AssemblyName>
+    <RootNamespace>Norne.Utils</RootNamespace>
+    <AssemblyName>Norne.Utils</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -41,38 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comparable\PapelComparable.cs" />
-    <Compile Include="IAgenciaBusiness.cs" />
-    <Compile Include="IContaPoupancaBusiness.cs" />
-    <Compile Include="IContaCorrenteBusiness.cs" />
-    <Compile Include="ICorrentistaBusiness.cs" />
-    <Compile Include="IContaBusiness.cs" />
-    <Compile Include="IFuncionarioBusiness.cs" />
-    <Compile Include="Implementacao\ContaPoupancaBusiness.cs" />
-    <Compile Include="Implementacao\AgenciaBusiness.cs" />
-    <Compile Include="Implementacao\CorrentistaBusiness.cs" />
-    <Compile Include="Implementacao\ContaCorrenteBusiness.cs" />
-    <Compile Include="Implementacao\FuncionarioBusiness.cs" />
-    <Compile Include="Implementacao\PapelBusiness.cs" />
-    <Compile Include="Implementacao\StatusContaBusiness.cs" />
-    <Compile Include="IPapelBusiness.cs" />
-    <Compile Include="IStatusContaBusiness.cs" />
+    <Compile Include="CriptografiaHash.cs" />
+    <Compile Include="ICriptografia.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
-    <ProjectReference Include="..\Norne.DAL\Norne.DAL.csproj">
-      <Project>{86311cb0-54c8-4469-8ba6-b08359c58cad}</Project>
-      <Name>Norne.DAL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Norne.Models\Norne.Models.csproj">
-      <Project>{2d82c245-7672-4f0b-80a8-ed37edbd7368}</Project>
-      <Name>Norne.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Norne.Utils\Norne.Utils.csproj">
-      <Project>{84553199-f990-4d31-82f5-036cdd968d5f}</Project>
-      <Name>Norne.Utils</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

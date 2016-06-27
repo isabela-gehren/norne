@@ -50,9 +50,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IContaPoupancaDal.cs" />
+    <Compile Include="IContaCorrenteDal.cs" />
+    <Compile Include="IAgenciaDal.cs" />
     <Compile Include="ICorrentistaDal.cs" />
     <Compile Include="IFuncionarioDal.cs" />
     <Compile Include="IGenericDal.cs" />
+    <Compile Include="Implementacao\ContaPoupancaDal.cs" />
+    <Compile Include="Implementacao\ContaCorrenteDal.cs" />
+    <Compile Include="Implementacao\AgenciaDal.cs" />
     <Compile Include="Implementacao\PapelDal.cs" />
     <Compile Include="Implementacao\StatusContaDal.cs" />
     <Compile Include="Implementacao\FuncionarioDal.cs" />
@@ -62,6 +68,11 @@
     <Compile Include="IPapelDal.cs" />
     <Compile Include="IStatusContaDal.cs" />
     <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Mapeamentos\ContaCorrentistaDependenteMap.cs" />
+    <Compile Include="Mapeamentos\ContaPoupancaMap.cs" />
+    <Compile Include="Mapeamentos\ContaCorrenteMap.cs" />
+    <Compile Include="Mapeamentos\ContaMap.cs" />
+    <Compile Include="Mapeamentos\AgenciaMap.cs" />
     <Compile Include="Mapeamentos\CorrentistaMap.cs" />
     <Compile Include="Mapeamentos\FuncionarioMap.cs" />
     <Compile Include="Mapeamentos\PapelMap.cs" />

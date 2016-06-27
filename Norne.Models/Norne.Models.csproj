@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conta.cs" />
+    <Compile Include="Agencia.cs" />
+    <Compile Include="ContaCorrente.cs" />
+    <Compile Include="ContaCorrentistaDependente.cs" />
+    <Compile Include="ContaPoupanca.cs" />
     <Compile Include="Correntista.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="Papel.cs" />
